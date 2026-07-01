@@ -23,7 +23,7 @@ def main():
         validate_order(args.symbol, args.side, args.type, args.quantity, args.price)
         
         client = BinanceFuturesClient()
-        logger.info(f"Placing {args.type} {args.side} order for {args.quantity} {args.symbol}")
+        logger.info(f"📤 Placing {args.type} {args.side} order for {args.quantity} {args.symbol}")
         
         order = client.place_order(
             args.symbol, args.side, args.type, args.quantity, args.price
