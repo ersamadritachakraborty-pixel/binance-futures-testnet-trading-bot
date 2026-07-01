@@ -1,0 +1,10 @@
+trading_bot/
+├── bot/
+│   ├── client.py          # API Layer
+│   ├── cli.py             # Command Interface
+│   ├── validators.py      # Input Safety
+│   └── logging_config.py  # Observability
+├── logs/                  # Execution logs
+├── .env.example
+├── README.md
+└── requirements.txt
