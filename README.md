@@ -1,35 +1,32 @@
 # Binance Futures Testnet Trading Bot
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Binance-Futures-%23F0B90B" alt="Binance">
-  <img src="https://img.shields.io/badge/Testnet-Safe%20Trading-success" alt="Testnet">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Binance-Futures-%23F0B90B" />
+  <img src="https://img.shields.io/badge/Testnet-Production%20Ready-success" />
+  <img src="https://img.shields.io/badge/Quality-Enterprise%20Grade-blueviolet" />
 </p>
 
-**A sleek, modular trading bot** crafted for the **Primetrade.ai Python Developer Internship**.
+**A clean, modular, and production-grade trading bot** built for the **Primetrade.ai Python Developer Internship**.
 
-Clean architecture. Production-grade quality. Built with precision.
+Demonstrates strong software engineering practices, modern Python tooling, and real-world API integration.
 
 ---
 
-## ✨ Highlights
+## ✨ Key Highlights
 
-- **Market & Limit Orders** — Seamless BUY / SELL on Binance Futures Testnet (USDT-M)
-- **Intuitive CLI** — Fast and user-friendly with smart validation
-- **Modular Design** — Clean separation of concerns (API Client + CLI)
-- **Enterprise Practices** — Logging, error handling, environment config
+- Market & Limit orders (BUY/SELL) on Binance Futures Testnet (USDT-M)
+- Rich, beautiful CLI using `rich` library
+- Modular architecture (Client, CLI, Validators, Logging)
+- Robust input validation, logging, and error handling
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Python 3.10+
-- Binance Futures Testnet API Keys
-
-### Installation
-
 ```bash
-git clone https://github.com/ersamadritachakraborty-pixelbinance-futures-testnet-trading-bot.git
+git clone https://github.com/ersamadritachakraborty-pixel/binance-futures-testnet-trading-bot.git
 cd binance-futures-testnet-trading-bot
+
 pip install -r requirements.txt
+cp .env.example .env
