@@ -30,6 +30,6 @@ Clean architecture. Production-grade quality. Built with precision.
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/binance-futures-testnet-trading-bot.git
+git clone https://github.com/ersamadritachakraborty-pixelbinance-futures-testnet-trading-bot.git
 cd binance-futures-testnet-trading-bot
 pip install -r requirements.txt
