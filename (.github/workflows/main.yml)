@@ -1,0 +1,2 @@
+- name: Lint and Syntax Check
+  run: python -m py_compile cli.py bot/*.py
