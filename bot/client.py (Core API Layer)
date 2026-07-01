@@ -1,0 +1,41 @@
+from binance.client import Client
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+class BinanceFuturesClient:
+    """Clean Binance Futures Testnet Client with elegant error handling."""
+    
+    def __init__(self):
+        api_key = os.getenv("BINANCE_API_KEY")
+        api_secret = os.getenv("BINANCE_API_SECRET")
+        
+        if not api_key or not api_secret:
+            raise ValueError("❌ API credentials missing in .env file")
+        
+        self.client = Client(api_key, api_secret, testnet=True)
+        print("✅ Connected to Binance Futures Testnet")
+
+    def place_order(self, symbol: str, side: str, order_type: str, quantity: float, price: float = None):
+        """Place Market or Limit order with rich response."""
+        try:
+            params = {
+                "symbol": symbol.upper(),
+                "side": side.upper(),
+                "type": order_type.upper(),
+                "quantity": str(quantity)
+            }
+            
+            if order_type.upper() == "LIMIT":
+                params["price"] = str(price)
+                params["timeInForce"] = "GTC"
+
+            order = self.client.futures_create_order(**params)
+            
+            print("🎉 Order Placed Successfully!")
+            return order
+            
+        except Exception as e:
+            print(f"❌ Order Failed: {e}")
+            raise
