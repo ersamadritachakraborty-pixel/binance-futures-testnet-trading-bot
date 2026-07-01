@@ -1,0 +1,1 @@
+python -m bot.cli --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 67500
