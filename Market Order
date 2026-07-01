@@ -1,0 +1,1 @@
+python -m bot.cli --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
